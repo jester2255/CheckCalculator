@@ -1,0 +1,42 @@
+#body{
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+#bottom{
+	margin-bottom: 20px;
+}
+.row{
+	margin-top: 20px;
+}
+.col-md-3{
+	border-radius: 5px;
+	text-align: center;
+	border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.col-md-4{
+	border-radius: 5px;
+	text-align: center;
+	border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.col-md-8{
+	border-radius: 5px;
+	text-align: center;
+	border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.btn{
+	margin-bottom: 8px;
+}
+table{
+	width: 100%;
+}
+th{
+	text-align: center;
+}

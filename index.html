@@ -2,18 +2,128 @@
 <html>
 <head>
 	<title>What's My Check?</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/bootstrap.css">
+	<link rel="stylesheet" href="style/bootstrap-theme.css">
+	<link rel="stylesheet" href="style/style.css">
 	<script type="text/javascript" src="logic/jquery_3.2.1.js"></script>
 	<script type="text/javascript" src="logic/bootstrap.min.js"></script>
-	<script type="text/javascript" src="logic/math.js"></script>
 </head>
 <body>
-	<div class="jumbotron">
-		<h1>Hello!</h1>
+	<div class="container-fluid" id = "body">
+		<div class="row">
+			<div class="col-md-4">
+				<p>Hourly Wage</p>
+				<form class="navbar-form navbar-center" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="$10.00">
+				  </div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<p>Hours Worked</p>
+				<form class="navbar-form navbar-center" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="80.00">
+				  </div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<p>Overtime hours</p>
+				<form class="navbar-form navbar-center" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="11.00">
+				  </div>
+				</form>
+			</div>
+			<!-- <button type="submit" class="btn btn-default">Submit</button> -->
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<p>HSA Contribution</p>
+				<form class="navbar-form navbar-center" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="$100.00">
+				  </div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<p>Calculate</p>
+				<button type="submit" class="btn btn-default">Calculate</button>
+			</div>
+			<div class="col-md-4">
+				<p>401k percentage</p>
+				<form class="navbar-form navbar-center" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="10%">
+				  </div>
+				</form>
+			</div>
+			<!-- <button type="submit" class="btn btn-default">Submit</button> -->
+		</div>
+		<div class="row">
+			<div class="col-md-3" id="colOne">
+				<p>Gross Pay</p>
+				<table>
+					<tr>
+						<th>Type</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>						
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-3" id="colTwo">
+				<p>Pre-tax Deductions</p>
+				<table>
+					<tr>
+						<th>Type</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-3" id="colThree">
+				<p>Taxable Wages</p>
+				<table>
+					<tr>
+						<th>Type</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-3" id="colFour">
+				<p>Post-tax Deductiond</p>
+				<table>
+					<tr>
+						<th>Type</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row" id="bottom">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h1>Your Net Pay</h1>
+				<p></p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
 	</div>
-
+	<script type="text/javascript" src="logic/math.js"></script>
 </body>
 </html>
